@@ -7,10 +7,10 @@ import java.util.stream.IntStream;
 @Slf4j
 public class Main {
     private static final int TASK_COUNT = 9;
-    private static MyFixedThreadPool myFixedThreadPool = new MyFixedThreadPool(3);
 
 
     public static void main(String[] args) {
+        MyFixedThreadPool myFixedThreadPool = new MyFixedThreadPool(3);
         log.info("Submitting {} tasks to MyFixedThreadPool", TASK_COUNT);
 
         IntStream.range(1, TASK_COUNT + 1)
